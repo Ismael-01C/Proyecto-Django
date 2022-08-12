@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>La Casa de la PizZa 🍕</title>
+	{% load static %}
+	<link rel="stylesheet" href=" {% static 'core/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuUniverso.css' %}">
+
+
+</head>
+
+<body background="{% static 'core/img/pizza.jpg' %}">
+
+<h1> House PiZza 🍕 </h1>
+
+<nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'core' %}">Inicio</a></li>
+
+			<li><a href="{% url 'nosotros' %}">Quienes Somos</a></li>
+			<li><a href="{% url 'productos' %}">Productos</a>
+			<li><a href="{% url 'contactanos' %}">Contactanos</a>
+
+
+		 </ul>
+	     </li>
+	</nav>
+
+<h2>
+	 Somos 2 estudiantes del ITSG, y esta es nuestra pagina, en la cual vendemos nuestras pizza de manera a domicilio
+</h2>
+
+ </body>
+
+</html>

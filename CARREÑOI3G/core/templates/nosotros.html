@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosotros</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menuUniverso.css' %}">
+
+    <style>
+         body {background: navajowhite;}
+    </style>
+</head>
+<body>
+
+<nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'core' %}">Inicio</a></li>
+
+			<li><a href="{% url 'nosotros' %}">Quienes Somos</a></li>
+			<li><a href="{% url 'productos' %}">Productos</a>
+			<li><a href="{% url 'contactanos' %}">Contactanos</a>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+<h1>Estudiantes</h1>
+
+<h1>Ismael Carreño</h1>
+<img src="static/core/img/32.jpg" width="150" alt="alternatetext">
+
+<div style="display:inline-block;">
+<p>
+    Carrera: Desarrollo de Software<br>
+    Nacido en:Ecuador-Guayaquil<br>
+    Edad: 19 años<br>
+
+</p>
+</div>
+
+<h1>Esther Salazar</h1>
+<img src="static/core/img/31.jpg" width="150" alt="alternatetext">
+
+</div>
+<div style="display:inline-block;">
+<p>
+    Carrera: Desarrollo de Software<br>
+    Nacida en:Ecuador-Guayaquil<br>
+    Edad: 22 años<br>
+
+</p>
+</div>
+
+
+</body>
+</html>

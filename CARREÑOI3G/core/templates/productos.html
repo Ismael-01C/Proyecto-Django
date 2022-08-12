@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/menuUniverso.css' %}">
+    <style>
+      p {color:FireBrick;}
+    </style>
+
+</head>
+<body background="{% static 'core/img/37.jpg' %}">
+
+<nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'core' %}">Inicio</a></li>
+
+			<li><a href="{% url 'nosotros' %}">Quienes Somos</a></li>
+			<li><a href="{% url 'productos' %}">Productos</a>
+			<li><a href="{% url 'contactanos' %}">Contactanos</a>
+
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+   {% for portal in Ports %}
+
+   <div>
+      <p>{{ portal.Contenido }}</p>
+      <img src="{{ portal.Imagen.url }}" alt="izza-dibujos-animados" width="600" height="600">
+
+   </div>
+
+{% endfor %}
+
+
+ </body>
+</html>
